@@ -18,7 +18,7 @@ const TodoList = () => {
                     <span className={todo.complete ? 'complete' : null}>{todo.name}</span>
                     <span className="delete-button" onClick={deleteTodo.bind(null, todo.id)}>X</span>
                 </li>
-            ))};
+            ))}
         </ul>
     );
 };
