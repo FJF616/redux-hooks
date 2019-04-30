@@ -1,6 +1,9 @@
 import { createStore } from 'redux';
 import uuid from 'uuid/v4';
 
+
+
+//since this is a small app, we will use one file for actions, and reducers and store
 const initialState =  {
     todos: [
         {
