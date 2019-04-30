@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useActions } from 'react-redux';
-import {addTodoAction } from '../redux';
+import { addTodoAction } from '../redux';
 import uuid from 'uuid/v4';
 
 const TodoInput = () => {

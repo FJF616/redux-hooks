@@ -19,13 +19,16 @@ const initialState =  {
     ]
 }
 
+//store
 export const store = createStore(
     reducer,
     initialState,
     window.devToolsExtension && window.devToolsExtension()
 );
 
-function reducer(state, { type, payload}) {
+
+//reducers
+function reducer(state, { type, payload }) {
     switch(type) {
         case 'ADD_TODO':
             return {
@@ -42,11 +45,13 @@ function reducer(state, { type, payload}) {
                 ...state,
                 todos: state.todos.filter(todo => todo.id !== payload)
             };
-            default:
-                return state;
+        default:
+            return state;
     }
 }
 
+
+//actions
 export const addTodoAction = (todo) => ({
     type: 'ADD_TODO',
     payload: todo
