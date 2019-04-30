@@ -1,6 +1,6 @@
 ## Getting familiar with react redux hooks
 
-this project requires alpha version of react redux (reac-redux@next)  
+this project requires alpha version of react redux (react-redux@next)  
 since this is a small project, all actions and reducers have been placed in redux.js file.
 
 ### based on this youtube tutorial:    
